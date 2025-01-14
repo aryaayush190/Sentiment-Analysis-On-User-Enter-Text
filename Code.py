@@ -38,3 +38,12 @@ def analyze(request):
      path('', home, name='home'),
      path('analyze/', analyze, name='analyze'),
  ]
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('sentiment_project/urls.py')),  # Include the app's URLs here
+]
+
