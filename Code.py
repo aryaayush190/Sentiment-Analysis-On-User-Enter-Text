@@ -1,14 +1,6 @@
-# Step 1: Generate requirements.txt
-pip freeze > requirements.txt
-
-# Step 2: Add the file to git
-git add requirements.txt
-
-# Step 3: Commit the changes
-git commit -m "Add requirements.txt for deployment"
-
-# Step 4: Push to GitHub
-git push origin main
+!pip install nltk
+!pip install Django
+!pip install TextBlob
 
 import nltk
 from django.http import HttpResponse
